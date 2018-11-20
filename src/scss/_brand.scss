@@ -1,21 +1,24 @@
 .brand{
-  display: inline-block;
-  padding: 1rem 0;
+  display: block;
   font-size: 1.25rem;
   letter-spacing: 1px;
   color: $font-color;
 
-  @media screen and (#{$bp-larger-than-tablet}){
+  @media screen and (#{$bp-larger-than-phablet}){
+    display: inline-block;
     padding: 0;
   }
 
   img{
-    display: inline-block;
-    width: 12%;
+    display: block;
+    width: 20%;
+    max-width: 6rem;
+    margin: .5rem 0;
     vertical-align: text-bottom;
     border-radius: 50%;
 
-    @media screen and (#{$bp-larger-than-tablet}){
+    @media screen and (#{$bp-larger-than-phablet}){
+      display: inline-block;
       width: auto;
       vertical-align: middle;
     }
@@ -25,7 +28,7 @@
 .brand-name{
   display: inline-block;
 
-  @media screen and (#{$bp-larger-than-tablet}){
+  @media screen and (#{$bp-larger-than-phablet}){
     position: relative;
     top: .5rem;
     left: .5rem;

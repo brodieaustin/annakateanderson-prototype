@@ -6,9 +6,13 @@
   text-align: left;
 
   p{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: Georgia, serif;
     line-height: 1.4;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      font-size: 1.25rem;
+    }
   }
 
   footer{
@@ -18,7 +22,12 @@
   .arrow-down{
     position: absolute;
     bottom: -3rem;
-    right: 3rem;
+    right: 1rem;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      bottom: -3rem;
+      right: 3rem;
+    }
   }
 }
 

@@ -522,27 +522,30 @@ hr {
         padding: 1rem 2rem; } }
 
 .brand {
-  display: inline-block;
-  padding: 1rem 0;
+  display: block;
   font-size: 1.25rem;
   letter-spacing: 1px;
   color: #333; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 550px) {
     .brand {
+      display: inline-block;
       padding: 0; } }
   .brand img {
-    display: inline-block;
-    width: 12%;
+    display: block;
+    width: 20%;
+    max-width: 6rem;
+    margin: .5rem 0;
     vertical-align: text-bottom;
     border-radius: 50%; }
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 550px) {
       .brand img {
+        display: inline-block;
         width: auto;
         vertical-align: middle; } }
 
 .brand-name {
   display: inline-block; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 550px) {
     .brand-name {
       position: relative;
       top: .5rem;
@@ -550,12 +553,12 @@ hr {
 
 .site-nav {
   position: fixed;
-  top: 6.675rem;
+  top: 8.625rem;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 4rem 0 1rem;
-  background-color: #fff;
+  background-color: #f5f5f5;
   z-index: 999;
   transform: translateX(-100%);
   transition: transform .2s linear; }
@@ -565,7 +568,7 @@ hr {
       float: right;
       width: auto;
       height: auto;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
       padding: 0;
       background-color: transparent;
       border-top: 0;
@@ -605,24 +608,27 @@ hr {
 
 .site-nav-control {
   position: absolute;
-  top: 2.25rem;
-  right: 1rem;
+  top: 0;
+  right: 0;
   display: inline-block;
-  width: 5rem;
+  width: auto;
   height: auto;
-  padding: .5rem .75rem;
+  margin: 1rem auto;
+  padding: .25rem;
   color: #894452;
   background-color: transparent;
-  border: 1px solid #894452;
+  border: 0;
+  border-bottom: 2px solid #894452;
   font-family: "Poppins", sans-serif;
   font-size: .875rem;
   cursor: pointer;
-  transition: opacity .1s linear; }
-  .site-nav-control:hover {
-    opacity: .7; }
+  transition: opacity .1s linear;
+  transform: rotate(45deg); }
   @media screen and (min-width: 850px) {
     .site-nav-control {
       display: none; } }
+  .site-nav-control:hover {
+    opacity: .7; }
 
 .open-site-nav:before {
   content: 'Menu'; }
@@ -635,6 +641,7 @@ hr {
   background-color: #fff; }
   .site-footer .brand {
     display: block;
+    padding: 0;
     font-size: 1.125rem;
     color: #333; }
 
@@ -686,14 +693,20 @@ hr {
 
 .homepage-section .container {
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center; }
+  @media screen and (min-width: 850px) {
+    .homepage-section .container {
+      padding: 6rem 2rem; } }
 
 .homepage-section-header {
   margin-top: 0;
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-transform: none;
   color: #333; }
+  @media screen and (min-width: 850px) {
+    .homepage-section-header {
+      font-size: 2.25rem; } }
 
 .homepage-section-text {
   max-width: 80%;
@@ -714,8 +727,8 @@ hr {
       top: 8rem; } }
 
 .testimonial-section .testimonial {
-  margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-left: 0;
+  margin-right: 0; }
   @media screen and (min-width: 850px) {
     .testimonial-section .testimonial {
       margin-left: 4rem;
@@ -732,15 +745,22 @@ hr {
   background-color: #BDCEDA;
   text-align: left; }
   .testimonial p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: Georgia, serif;
     line-height: 1.4; }
+    @media screen and (min-width: 850px) {
+      .testimonial p {
+        font-size: 1.25rem; } }
   .testimonial footer {
     font-size: .875rem; }
   .testimonial .arrow-down {
     position: absolute;
     bottom: -3rem;
-    right: 3rem; }
+    right: 1rem; }
+    @media screen and (min-width: 850px) {
+      .testimonial .arrow-down {
+        bottom: -3rem;
+        right: 3rem; } }
 
 .testimonial-label {
   display: block;
@@ -757,34 +777,37 @@ hr {
   border-top: 4rem solid #BDCEDA; }
 
 .page .container {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 4rem; }
+  background-color: rgba(255, 255, 255, 0.8); }
+  @media screen and (min-width: 850px) {
+    .page .container {
+      padding: 4rem; } }
 
 .page-header {
-  background-color: #BDCEDA; }
+  background-color: #5b85a3; }
   @media screen and (min-width: 850px) {
     .page-header {
-      padding-bottom: 4rem; } }
-  .page-header .container {
-    padding-bottom: 2rem; }
-    @media screen and (min-width: 850px) {
-      .page-header .container {
-        top: 4rem; } }
+      padding-bottom: 4rem;
+      background-color: #BDCEDA; } }
+  @media screen and (min-width: 850px) {
+    .page-header .container {
+      top: 4rem;
+      padding-bottom: 2rem; } }
   .page-header h1 {
     margin-top: .5rem;
-    font-size: 3rem; }
+    font-size: 2.25rem; }
+    @media screen and (min-width: 850px) {
+      .page-header h1 {
+        font-size: 3rem; } }
 
 @media screen and (min-width: 850px) {
   .content-only .container * {
     max-width: 60%; } }
 
-.page-content-title {
-  margin-bottom: 2rem; }
-  @media screen and (min-width: 850px) {
-    .page-content-title {
-      width: calc(60% - 4rem);
-      margin-bottom: 0;
-      margin-right: 4rem; } }
+@media screen and (min-width: 850px) {
+  .page-content-title {
+    width: calc(60% - 4rem);
+    margin-bottom: 0;
+    margin-right: 4rem; } }
 
 @media screen and (min-width: 850px) {
   .page-content-sidebar {
@@ -801,7 +824,10 @@ hr {
     font-size: 1rem; }
 
 .info-box-price {
-  font-size: 3.5rem; }
+  font-size: 2.5rem; }
+  @media screen and (min-width: 850px) {
+    .info-box-price {
+      font-size: 3.5rem; } }
 
 .resume-kit-illustration {
   width: 100%;
@@ -839,9 +865,13 @@ hr {
           width: 30%; } }
 
 .resume-kit-details h2 {
-  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
   color: #333;
   text-transform: none; }
+  @media screen and (min-width: 850px) {
+    .resume-kit-details h2 {
+      font-size: 2.25rem; } }
 
 @media screen and (min-width: 850px) {
   .resume-kit-details .page-content-title {

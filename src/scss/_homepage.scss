@@ -2,16 +2,24 @@
 
   .container{
     background-color: rgba($white, .6);
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      padding: 6rem 2rem;
+    }
   }
 }
 
 .homepage-section-header{
   margin-top: 0;
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-transform: none;
   color: $font-color;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    font-size: 2.25rem;
+  }
 }
 
 .homepage-section-text{
@@ -42,8 +50,8 @@
 
 .testimonial-section{
   .testimonial{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0;
+    margin-right: 0;
 
     @media screen and (#{$bp-larger-than-tablet}){
       margin-left: 4rem;
