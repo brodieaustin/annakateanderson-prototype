@@ -1,0 +1,44 @@
+.site-footer{
+  padding-bottom: 2rem;
+  background-color: $white;
+
+  .brand{
+    display: block;
+    font-size: 1.125rem;
+    color: $font-color;
+  }
+}
+
+.contact{
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: calc(70% - 2rem);
+    margin-right: 2rem;
+  }
+
+  a, span{
+    display: block;
+    margin-bottom: .25rem;
+  }
+}
+
+.engage{
+  margin-top: 2.5rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: 30%;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .social{
+    li{
+      margin-right: .5rem;
+
+      @media screen and (#{$bp-larger-than-tablet}){
+        margin-left: .5rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

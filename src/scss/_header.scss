@@ -1,0 +1,12 @@
+.site-header{
+  background-color: $white;
+
+  .container{
+    padding: 1rem;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      padding: 1rem 2rem;
+    }
+
+  }
+}

@@ -1,0 +1,58 @@
+.homepage-section{
+
+  .container{
+    background-color: rgba($white, .6);
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+}
+
+.homepage-section-header{
+  margin-top: 0;
+  font-size: 2.25rem;
+  text-transform: none;
+  color: $font-color;
+}
+
+.homepage-section-text{
+  max-width: 80%;
+  margin: 2rem auto;
+  font-size: 1.125rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    max-width: 50%;
+  }
+}
+
+.overview-section{
+  background: url('../img/neonbrand-618322-unsplash-cropped.jpg') no-repeat center center;
+  background-size: cover;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    padding-bottom: 8rem;
+  }
+
+  .container{
+    @media screen and (#{$bp-larger-than-tablet}){
+      top: 8rem;
+    }
+
+  }
+}
+
+.testimonial-section{
+  .testimonial{
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+  }
+}
+
+.resume-kit-section{
+  background: url('../img/kaitlyn-baker-422999-unsplash-cropped.jpg') no-repeat center center;
+  background-size: cover;
+}

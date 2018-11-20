@@ -1,0 +1,32 @@
+.social{
+  @include unstyled-list;
+  margin-top: 2rem;
+
+  @media screen and (#{$bp-larger-than-phablet}){
+    margin-top: 0;
+  }
+
+  li{
+    display: inline-block;
+
+    a{
+      display: block;
+      height: 3rem;
+      width: 3rem;
+      padding: 0;
+      background-color: $primary-color;
+
+      &.twitter{
+        background-color: #3EADEA;
+      }
+
+      &.linkedin{
+        background-color: #2576B0;
+      }
+    }
+  }
+
+  svg{
+    fill: $white;
+  }
+}

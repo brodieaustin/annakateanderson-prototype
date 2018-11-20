@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+{% if page.background_img %}
+  <style>
+    .page-header{
+      background: url('../assets/img/{{ page.background_img}}') no-repeat center center;
+      background-size: cover;
+    }
+  </style>
+{% endif %}
+
+<article class="page {{ page.page_class }}">
+  {{ content }}
+</article>

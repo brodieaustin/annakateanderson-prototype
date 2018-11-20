@@ -1,0 +1,16 @@
+.info-box{
+  padding: 2rem 2rem 3rem;
+  background-color: rgba($white, .8);
+  text-align: center;
+
+  h3{
+    text-transform: uppercase;
+    color: $font-color;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+}
+
+.info-box-price{
+  font-size: 3.5rem;
+}

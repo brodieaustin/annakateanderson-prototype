@@ -1,0 +1,52 @@
+.page{
+  .container{
+    background-color: rgba($white, .8);
+    padding: 4rem;
+  }
+}
+
+.page-header{
+  background-color: $secondary-color;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    padding-bottom: 4rem;
+  }
+
+  .container{
+    padding-bottom: 2rem;
+    @media screen and (#{$bp-larger-than-tablet}){
+      top: 4rem;
+    }
+  }
+
+  h1{
+    margin-top: .5rem;
+    font-size: 3rem;
+  }
+}
+
+.content-only{
+  .container{
+    *{
+      @media screen and (#{$bp-larger-than-tablet}){
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+.page-content-title{
+  margin-bottom: 2rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: calc(60% - 4rem);
+    margin-bottom: 0;
+    margin-right: 4rem;
+  }
+}
+
+.page-content-sidebar{
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: 40%;
+  }
+}

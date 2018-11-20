@@ -1,0 +1,39 @@
+.testimonial{
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: $secondary-color;
+  text-align: left;
+
+  p{
+    font-size: 1.25rem;
+    font-family: Georgia, serif;
+    line-height: 1.4;
+  }
+
+  footer{
+    font-size: .875rem;
+  }
+
+  .arrow-down{
+    position: absolute;
+    bottom: -3rem;
+    right: 3rem;
+  }
+}
+
+.testimonial-label{
+  display: block;
+  margin-bottom: 1rem;
+  font-size: .75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 2.5rem solid transparent;
+	border-right: 2.5rem solid transparent;
+	border-top: 4rem solid $secondary-color;
+}
