@@ -57,14 +57,14 @@
     }
   }
 
-  .page-content-title{
+  .page-content-main{
     @media screen and (#{$bp-larger-than-tablet}){
       width: calc(50% - 4rem);
       margin-right: 4rem;
     }
   }
 
-  .page-content-sidebar{
+  .page-content-aside{
     @media screen and (#{$bp-larger-than-tablet}){
       width: 50%;
     }

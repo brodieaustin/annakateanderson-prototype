@@ -1,3 +1,4 @@
+
 .testimonial{
   position: relative;
   margin: 2rem 0;
@@ -7,12 +8,6 @@
 
   p{
     font-size: 1.125rem;
-    font-family: Georgia, serif;
-    line-height: 1.4;
-
-    @media screen and (#{$bp-larger-than-tablet}){
-      font-size: 1.25rem;
-    }
   }
 
   footer{
@@ -22,7 +17,8 @@
   .arrow-down{
     position: absolute;
     bottom: -3rem;
-    right: 1rem;
+    right: 2rem;
+    transform: rotate(20deg);
 
     @media screen and (#{$bp-larger-than-tablet}){
       bottom: -3rem;

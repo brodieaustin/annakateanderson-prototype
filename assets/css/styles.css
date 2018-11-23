@@ -453,11 +453,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.3; }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   color: #894452; }
 
 h2 {
-  text-transform: uppercase;
   letter-spacing: .5px; }
 
 p {
@@ -494,12 +493,14 @@ hr {
 
 .button {
   display: inline-block;
+  margin: 1rem 0;
   padding: 1rem 1.5rem;
-  border: 1px solid #894452;
-  background-color: #fff;
+  border: 2px solid #894452;
+  background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .875rem;
+  color: #894452;
   cursor: pointer;
   transition: .2s opacity ease; }
   .button:hover {
@@ -564,7 +565,7 @@ hr {
   border-right: 1px solid #e8e8e8;
   z-index: 999;
   transform: translateX(-100%);
-  transition: transform .2s linear; }
+  transition: transform .4s ease-out; }
   @media screen and (min-width: 850px) {
     .site-nav {
       position: static;
@@ -574,7 +575,7 @@ hr {
       margin-top: 2.5rem;
       padding: 0;
       background-color: transparent;
-      border-top: 0;
+      border-right: 0;
       opacity: 1;
       transform: none; } }
   .site-nav.open {
@@ -730,11 +731,11 @@ hr {
     .overview-section .container {
       top: 8rem; } }
 
-.testimonial-section .testimonial {
+.homepage-section.testimonial-section .testimonial {
   margin-left: 0;
   margin-right: 0; }
   @media screen and (min-width: 850px) {
-    .testimonial-section .testimonial {
+    .homepage-section.testimonial-section .testimonial {
       margin-left: 4rem;
       margin-right: 4rem; } }
 
@@ -749,18 +750,14 @@ hr {
   background-color: #BDCEDA;
   text-align: left; }
   .testimonial p {
-    font-size: 1.125rem;
-    font-family: Georgia, serif;
-    line-height: 1.4; }
-    @media screen and (min-width: 850px) {
-      .testimonial p {
-        font-size: 1.25rem; } }
+    font-size: 1.125rem; }
   .testimonial footer {
     font-size: .875rem; }
   .testimonial .arrow-down {
     position: absolute;
     bottom: -3rem;
-    right: 1rem; }
+    right: 2rem;
+    transform: rotate(20deg); }
     @media screen and (min-width: 850px) {
       .testimonial .arrow-down {
         bottom: -3rem;
@@ -797,25 +794,46 @@ hr {
       top: 4rem;
       padding-bottom: 2rem; } }
   .page-header h1 {
-    margin-top: .5rem;
+    margin-top: .75rem;
     font-size: 2.25rem; }
     @media screen and (min-width: 850px) {
       .page-header h1 {
         font-size: 3rem; } }
 
 @media screen and (min-width: 850px) {
-  .content-only .container * {
-    max-width: 60%; } }
-
-@media screen and (min-width: 850px) {
-  .page-content-title {
+  .page-content-main {
     width: calc(60% - 4rem);
     margin-bottom: 0;
     margin-right: 4rem; } }
 
 @media screen and (min-width: 850px) {
-  .page-content-sidebar {
+  .page-content-aside {
     width: 40%; } }
+
+@media screen and (min-width: 850px) {
+  .user-content {
+    max-width: 60%; } }
+
+.user-content ul {
+  list-style: square;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0; }
+  .user-content ul li {
+    margin-bottom: .5rem; }
+
+.user-content blockquote {
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1.25rem;
+  color: #496a82; }
+
+.page .testimonial-section {
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 850px) {
+    .page .testimonial-section {
+      margin-bottom: 4rem; } }
 
 .info-box {
   padding: 2rem 2rem 3rem;
@@ -878,10 +896,10 @@ hr {
       font-size: 2.25rem; } }
 
 @media screen and (min-width: 850px) {
-  .resume-kit-details .page-content-title {
+  .resume-kit-details .page-content-main {
     width: calc(50% - 4rem);
     margin-right: 4rem; } }
 
 @media screen and (min-width: 850px) {
-  .resume-kit-details .page-content-sidebar {
+  .resume-kit-details .page-content-aside {
     width: 50%; } }
