@@ -30,3 +30,26 @@
     fill: $white;
   }
 }
+
+.social-shares{
+  @include unstyled-list;
+  margin-top: 1rem;
+
+  li{
+    display: inline-block;
+    margin-right: .25rem;
+
+    a{
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: darken($dark-grey, 30%);
+      border-radius: 50%;
+      vertical-align: bottom;
+
+      svg{
+        fill: $white;
+      }
+    }
+  }
+}

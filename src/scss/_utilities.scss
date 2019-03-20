@@ -17,6 +17,13 @@
   padding: 0;
 }
 
+@mixin section-label{
+  margin-bottom: 2rem;
+  font-size: .75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .flex-video {
   position: relative;
   padding-top: 1.5625rem;
